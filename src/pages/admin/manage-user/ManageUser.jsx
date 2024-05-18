@@ -5,10 +5,13 @@ import UserWrapper from '../../../components/users/UserWrapper'
 const ManageUser = () => {
   let { data } = useGetUsersQuery()
   return (
-    <div>
-      <h2>ManageUser</h2>
+    <>
+    <div className='container'>
+      <h2 className='h2'>ManageUser</h2>
+      </div>
       <UserWrapper isAdmin={true} users={data}/>
-    </div>
+    </>
+
   )
 }
 

@@ -15,11 +15,20 @@ export const productApi = api.injectEndpoints({
         method:"DELETE"
       }),
       invalidatesTags: ["User"]
+    }),
+    postUser:build.mutation({
+      query:(body)=>({
+        url:"/users",
+        method: "POST",
+        body,
+      }),
+      invalidatesTags:["User"]
     })
   }),
 })
 
 export const {
   useGetUsersQuery,
-  useDeleteUserMutation
+  useDeleteUserMutation,
+  usePostUserMutation
 } = productApi
