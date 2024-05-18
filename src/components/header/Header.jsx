@@ -7,32 +7,19 @@ const Navbar = () => {
     <div className='container'>
       <div className="nav-links">
         <div className="item">
-          <NavLink to ={"/"}>
-            <span>home</span>
-          </NavLink>
           <ul>
             <li>
-              <a href="#">Shop All</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
+          <NavLink to ={"/"}>
+            <span>Home</span>
+          </NavLink>
             </li>
             <NavLink to ={"/admin/create"}>
-              <span>Create</span>
+              <span>Create Admin</span>
             </NavLink>
             <NavLink to ={"/admin/manage"}>
-              <span>manage</span>
+              <span>Manage Admin</span>
             </NavLink>
           </ul>
-        </div>
-        {/* <img src={logo} alt="" /> */}
-        <div className="nav">
-          <ul>
-            <li>
-              <a href="#">About Us</a>
-            </li>
-          </ul>
-          <input type="text" placeholder='Search Product...' />        
         </div>
       </div>
     </div>

@@ -10,14 +10,14 @@ const UserWrapper = ({users, isAdmin}) => {
 
   let userItems = users?.map((user) => (
     <div className='user__card' key={user.id}>
-      <img src={user.avatar} alt="" />
-      <h2>{user.name}</h2>
-      <p>{user.age}</p>
+      <img className='img' src={user.avatar} alt="" />
+      <h2 className='name'>{user.name}</h2>
+      <p  className='age'>{user.age}</p>
       {
         isAdmin ?
         <>
-          <button>edit</button>
-          <button onClick={()=>handleDeleteUser(user.id)}>delete</button>
+          <button className='btn'>edit</button>
+          <button className='btn' onClick={()=>handleDeleteUser(user.id)}>delete</button>
         </>
         :
         <></>
@@ -25,8 +25,7 @@ const UserWrapper = ({users, isAdmin}) => {
     </div>
   ))
   return (
-    <div>
-      <h2>UserWrapper</h2>
+    <div className='container'>
       <div className="user__wrapper">
         {userItems}
       </div>
