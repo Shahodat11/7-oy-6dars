@@ -6,7 +6,7 @@ const Home = () => {
     let {data, error, isError, isLoading, isSuccess} = useGetUsersQuery()
   return (
     <div>
-        <UserWrapper users = {data}/>
+        <UserWrapper isAdmin={false} users = {data}/>
     </div>
   )
 }

@@ -12,11 +12,10 @@ function App() {
       <Header/>
        <Routes> 
         <Route path='/' element={<Home/>}/>
-        <Route path = '/admin' element ={<Admin/>}>
-          <Route path='create' element={<CreateUser/>}/>
-          <Route path='manage' element={<ManageUser/>}/>
-        </Route>
-      </Routes>
+        <Route path = '/admin' element ={<Admin/>}/>
+          <Route path='/admin/create' element={<CreateUser/>}/>
+          <Route path='/admin/manage' element={<ManageUser/>}/>
+        </Routes>
     </>
   )
 }

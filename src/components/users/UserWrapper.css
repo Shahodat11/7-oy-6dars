@@ -1,0 +1,5 @@
+.user__wrapper{
+    display: flex;
+    padding: 50px;
+    gap: 20px;
+}
